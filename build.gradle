@@ -1,0 +1,24 @@
+buildscript {
+    
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.3'
+    }
+}
+
+project.ext.set("versionCode", 11)
+project.ext.set("versionName", "1.2.2")
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="dialog_error">Error</string>
+    <string name="dialog_warning">Atenció</string>
+    <string name="dialog_success">Èxit</string>
+    <string name="dialog_cancel">Cancel·lar</string>
+    <string name="dialog_loading">Carregant…</string>
+</resources>
