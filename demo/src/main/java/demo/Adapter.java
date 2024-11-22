@@ -1,4 +1,4 @@
-package es.app2u.demo;
+package demo;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-
+import ivanpg93.demo.R;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
@@ -17,13 +17,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         void onClick(int position);
     }
 
-    private List <String> dialogsTitleList;
-    private DialogsAdapterInterface observer;
+    private final List <String> dialogsTitleList;
+    private final DialogsAdapterInterface observer;
 
     public Adapter (List <String> dialogsTitleList, DialogsAdapterInterface observer){
        this.dialogsTitleList = dialogsTitleList;
        this.observer = observer;
-
     }
 
     @NonNull
@@ -43,13 +42,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         return dialogsTitleList.size();
     }
 
-    //================================================================================
-    //region ViewHolder
-    //================================================================================
-
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView txvTitle;
+        private final TextView txvTitle;
 
         ViewHolder(View v) {
             super(v);
@@ -58,14 +53,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         private void bind(final String title) {
             txvTitle.setText(title);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    observer.onClick(getAdapterPosition());
-                }
-            });
+            itemView.setOnClickListener(view -> observer.onClick(getAdapterPosition()));
         }
     }
-    //endregion
+
 }

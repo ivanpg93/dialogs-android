@@ -1,4 +1,4 @@
-package es.app2u.dialogs;
+package ivanpg93.dialogs;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -173,7 +173,7 @@ public class DialogBuilder {
             return strVariable;
         } else if (context != null && intVariable != null) {
             return context.getString(intVariable);
-        }else  {
+        } else {
             return "";
         }
     }

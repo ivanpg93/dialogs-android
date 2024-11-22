@@ -1,9 +1,11 @@
-package es.app2u.demo;
+package demo;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+
+import ivanpg93.demo.R;
 
 public class AuxiliaryActivity extends AppCompatActivity {
 
@@ -15,8 +17,7 @@ public class AuxiliaryActivity extends AppCompatActivity {
         Button goMainButton = findViewById(R.id.goMainButton);
         goMainButton.setOnClickListener(v -> {
             finish();
-            Intent intent = new Intent(AuxiliaryActivity.this, MainActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(AuxiliaryActivity.this, MainActivity.class));
         });
     }
 
