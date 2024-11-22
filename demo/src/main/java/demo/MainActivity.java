@@ -1,5 +1,6 @@
-package es.app2u.demo;
+package demo;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,8 +18,9 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.app2u.dialogs.Dialog;
-import es.app2u.dialogs.DialogBuilder;
+import ivanpg93.demo.R;
+import ivanpg93.dialogs.Dialog;
+import ivanpg93.dialogs.DialogBuilder;
 
 public class MainActivity extends AppCompatActivity implements Adapter.DialogsAdapterInterface {
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements Adapter.DialogsAd
     private String [] list;
     private View customLayout;
 
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -220,10 +223,5 @@ public class MainActivity extends AppCompatActivity implements Adapter.DialogsAd
                 .cancelable(false)
                 .build(this);
     }
-
-
-    //endregion
-    //================================================================================
-
 
 }

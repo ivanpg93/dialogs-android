@@ -1,4 +1,4 @@
-package es.app2u.dialogs;
+package ivanpg93.dialogs;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import es.app2u.dialogs.R;
 
 /**
  * Copyright (c) 2018 - app2U
@@ -48,7 +49,7 @@ public class Dialog {
         alertBuilder.setOnDismissListener(builder.onDismissListener);
 
         // Its incompatible to have a dialog with a list and a message at the same time.
-        boolean isDialogWithAList =  builder.list.length != 0;
+        boolean isDialogWithAList = builder.list.length != 0;
         if (!isDialogWithAList) {
             alertBuilder.setMessage(builder.getMessage());
         } else {
@@ -58,7 +59,7 @@ public class Dialog {
                     alertBuilder.setItems(builder.list, builder.listenerList);
                     break;
                 case RADIO_BUTTON:
-                    alertBuilder.setSingleChoiceItems(builder.list,builder.selectedItem, builder.listenerList);
+                    alertBuilder.setSingleChoiceItems(builder.list, builder.selectedItem, builder.listenerList);
                     break;
                 case CHECKBOX:
                     boolean[] checkedItems = builder.checkedItems;
@@ -80,7 +81,7 @@ public class Dialog {
         }
 
         if (layout.getParent() != null) {
-            ((ViewGroup)layout.getParent()).removeView(layout);
+            ((ViewGroup) layout.getParent()).removeView(layout);
         }
 
         alertBuilder.setView(layout);
@@ -147,7 +148,7 @@ public class Dialog {
         loadingDialog.show();
     }
 
-    public static void cancelLoadingDialog(){
+    public static void cancelLoadingDialog() {
         cancelDialog(loadingDialog);
     }
 
@@ -206,7 +207,7 @@ public class Dialog {
     //region Predefined Alert
 
     public static void showDialog(Context context, String title, String message) {
-         new DialogBuilder()
+        new DialogBuilder()
                 .title(title)
                 .message(message)
                 .btnOK(android.R.string.ok)
