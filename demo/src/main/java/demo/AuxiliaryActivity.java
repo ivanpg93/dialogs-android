@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import ivanpg93.demo.R;
+import es.ivanpg93.demo.R;
 
 public class AuxiliaryActivity extends AppCompatActivity {
 

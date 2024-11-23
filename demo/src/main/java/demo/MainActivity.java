@@ -18,9 +18,9 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.List;
 
-import ivanpg93.demo.R;
-import ivanpg93.dialogs.Dialog;
-import ivanpg93.dialogs.DialogBuilder;
+import es.ivanpg93.demo.R;
+import dialogs.Dialog;
+import dialogs.DialogBuilder;
 
 public class MainActivity extends AppCompatActivity implements Adapter.DialogsAdapterInterface {
 

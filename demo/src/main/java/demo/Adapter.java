@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import ivanpg93.demo.R;
+import es.ivanpg93.demo.R;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 

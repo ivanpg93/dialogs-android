@@ -1,4 +1,4 @@
-package ivanpg93.dialogs;
+package dialogs;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import es.app2u.dialogs.R;
+import es.ivanpg93.dialogs.R;
 
 /**
  * Copyright (c) 2018 - app2U

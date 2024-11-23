@@ -1,4 +1,4 @@
-package ivanpg93.dialogs;
+package dialogs;
 
 import android.content.Context;
 import android.content.DialogInterface;
