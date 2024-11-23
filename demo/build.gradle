@@ -2,13 +2,15 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdk 34
+
     defaultConfig {
-        applicationId "ivanpg93.dialogs.demo"
+        applicationId "es.ivanpg93.dialogs.demo"
         minSdkVersion 19
         targetSdkVersion 34
         versionCode project.versionCode
         versionName project.versionName
     }
+
     buildTypes {
         release {
             minifyEnabled false

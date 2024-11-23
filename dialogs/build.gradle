@@ -12,6 +12,11 @@ android {
         consumerProguardFiles 'proguard-rules.pro'
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled true
@@ -27,15 +32,16 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
 }
 
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'es.ivanpg93'
-            artifactId = 'dialogs'
-            version = '1.0'
-
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            mavenRelease(MavenPublication) {
                 from components.release
+                pom {
+                    groupId = 'es.ivanpg93'
+                    version = project.versionName
+                    artifactId = project.name
+                }
             }
         }
     }
