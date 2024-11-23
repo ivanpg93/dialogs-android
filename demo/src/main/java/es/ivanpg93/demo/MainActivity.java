@@ -1,4 +1,4 @@
-package demo;
+package es.ivanpg93.demo;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
@@ -18,9 +18,8 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.ivanpg93.demo.R;
-import dialogs.Dialog;
-import dialogs.DialogBuilder;
+import es.ivanpg93.dialogs.Dialog;
+import es.ivanpg93.dialogs.DialogBuilder;
 
 public class MainActivity extends AppCompatActivity implements Adapter.DialogsAdapterInterface {
 

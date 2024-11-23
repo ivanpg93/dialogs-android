@@ -1,4 +1,4 @@
-package dialogs;
+package es.ivanpg93.dialogs;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,8 +10,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import es.ivanpg93.dialogs.R;
 
 public class Dialog {
 

@@ -1,11 +1,9 @@
-package demo;
+package es.ivanpg93.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
-
-import es.ivanpg93.demo.R;
 
 public class AuxiliaryActivity extends AppCompatActivity {
 

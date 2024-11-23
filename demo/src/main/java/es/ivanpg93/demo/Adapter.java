@@ -1,4 +1,4 @@
-package demo;
+package es.ivanpg93.demo;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
-
-import es.ivanpg93.demo.R;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 

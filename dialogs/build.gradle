@@ -23,7 +23,6 @@ android {
             proguardFiles 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
