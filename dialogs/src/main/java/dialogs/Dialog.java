@@ -13,10 +13,6 @@ import android.view.ViewGroup;
 
 import es.ivanpg93.dialogs.R;
 
-/**
- * Copyright (c) 2018 - app2U
- */
-
 public class Dialog {
 
     private static final int PROGRESS_BAR_MAX = 100;
